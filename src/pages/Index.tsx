@@ -1,13 +1,22 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import HeroSection from "@/components/portfolio/HeroSection";
+import GlobalFootprint from "@/components/portfolio/GlobalFootprint";
+import ImpactCarousel from "@/components/portfolio/ImpactCarousel";
+import CreativeGallery from "@/components/portfolio/CreativeGallery";
+import SalesEngineLab from "@/components/portfolio/SalesEngineLab";
+import ProfessionalTimeline from "@/components/portfolio/ProfessionalTimeline";
+import Footer from "@/components/portfolio/Footer";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <main className="overflow-x-hidden">
+      <HeroSection />
+      <GlobalFootprint />
+      <ImpactCarousel />
+      <CreativeGallery />
+      <SalesEngineLab />
+      <ProfessionalTimeline />
+      <Footer />
+    </main>
   );
 };
 
